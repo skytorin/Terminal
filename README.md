@@ -1,11 +1,13 @@
 # Settings Terminal for vim, bash, kubectl etc
 
 ## Bash
-~/.bashrc
+Добавить строки в файл: ~/.bashrc
 ```
-export TZ=UTC                                                                                                                                          ```
+export TZ=UTC
+```                                                                                                                                          ```
+
 Альясы к командам
-Добавляем строки в файл: ~/.bash_aliass или ~/.bashrc
+Добавить строки в файл: ~/.bash_aliass или ~/.bashrc
 ```
 alias ll='ls -alF'                                                                                                                                     
 alias la='ls -A'                                                                                                                                       
@@ -16,7 +18,7 @@ alias k=kubectl
 
 ## Vim
 Автонуменрация строк в редакторе, вид курсора в разных режимах
-Добавляем строки в файл: ~/.vim/vimrc или /etc/vim/vimrc
+Добавить строки в файл: ~/.vim/vimrc или /etc/vim/vimrc
 ```
 set number                                                                                                                                             
 set ttimeoutlen=10 "Понижаем задержку ввода escape последовательностей
@@ -28,7 +30,7 @@ let &t_EI.="\e[1 q" "EI = нормальный режим
 
 ## Kubectl
 Автодополнение команды kubectl
-Добавляем строки в файл: ~./.bashrc
+Добавить строки в файл: ~./.bashrc
 ```
 complete -F __start_kubectl k                                                                                                                          
 source <(kubectl completion bash)  
@@ -45,7 +47,7 @@ helm completion bash > /etc/bash_completion.d/helm
 
 ## Git
 Короткий вывод приглашения и указание названия ветки текущей ветки репозитария
-Добавляем строки в файл: ~/.bashrc
+Добавить строки в файл: ~/.bashrc
 ```
 . ~/git-prompt.sh                                                                                                                                      
 export GIT_PS1_SHOWDIRTYSTATE=1                                                                                                                        
