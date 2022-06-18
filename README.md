@@ -4,9 +4,10 @@
 Добавить строки в файл: ~/.bashrc
 ```
 export TZ=UTC
-```                                                                                                                                          ```
+```
 
-Альясы к командам
+
+Альясы к командам.  
 Добавить строки в файл: ~/.bash_aliass или ~/.bashrc
 ```
 alias ll='ls -alF'                                                                                                                                     
@@ -17,7 +18,7 @@ alias k=kubectl
 
 
 ## Vim
-Автонуменрация строк в редакторе, вид курсора в разных режимах
+Автонуменрация строк в редакторе, вид курсора в разных режимах.  
 Добавить строки в файл: ~/.vim/vimrc или /etc/vim/vimrc
 ```
 set number                                                                                                                                             
@@ -29,7 +30,7 @@ let &t_EI.="\e[1 q" "EI = нормальный режим
 
 
 ## Kubectl
-Автодополнение команды kubectl
+Автодополнение команды kubectl.
 Добавить строки в файл: ~./.bashrc
 ```
 complete -F __start_kubectl k                                                                                                                          
@@ -38,7 +39,7 @@ source <(kubectl completion bash)
 
 
 ## Helm
-Автодополнение команд Helm
+Автодополнение команд Helm.
 ```
 source <(helm completion bash)
 helm completion bash > /etc/bash_completion.d/helm
@@ -46,7 +47,7 @@ helm completion bash > /etc/bash_completion.d/helm
 
 
 ## Git
-Короткий вывод приглашения и указание названия ветки текущей ветки репозитария
+Короткий вывод приглашения и указание названия ветки текущей ветки репозитария.  
 Добавить строки в файл: ~/.bashrc
 ```
 . ~/git-prompt.sh                                                                                                                                      
