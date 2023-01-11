@@ -54,3 +54,20 @@ helm completion bash > /etc/bash_completion.d/helm
 export GIT_PS1_SHOWDIRTYSTATE=1                                                                                                                        
 export PS1='\[\033[36m\]\w:$(__git_ps1 "\[\033[32m\](%s)")\[\033[34m\]$ \[\033[37m\]'
 ```
+
+## TMUX
+### Поддержка мышки.  
+Если вам необходимо чтобы мышь работала в обычном режиме, поместите следующие строки в файл ~/.profile:
+```
+if [ $TERM = "screen" ]; then
+    export TERM=xterm
+fi
+if [ -n "$TMUX" ]; then
+    export COLORTERM=rxvt
+fi
+```
+И добавить в ~/.tmux.conf
+```
+set -g mouse on
+setw -g xterm-keys on
+```
